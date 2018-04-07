@@ -1,0 +1,174 @@
+/***********BASE STYLES***********/
+body {
+	font-family: 'montserrat', sans-serif;
+}
+
+p {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+h2 {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #77a466;
+}
+
+h3 {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/***********GRID***********/
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+
+/***********HEADER***********/
+
+header{
+	height:110px;
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
+}
+
+header h1{
+	float: left;
+	font-size: 30px;
+	font-weight:bold;
+	margin: 0;
+	padding: 38px 0;
+	text-transform: uppercase;
+}
+
+h1 span{
+	color:#77a466;
+}
+
+
+header nav {
+	float: right;
+	padding: 46px 0;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li {
+	display: inline;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	color: #77a466;
+	padding: 0 10px;
+}
+
+
+/***********TOP SECTION***********/
+
+.top, .bottom {
+	margin: 0 auto;
+	clear:both;
+}
+
+.hero-img {
+	height: auto;
+	float: left;
+}
+
+.hero-img img {
+	border-bottom: 3px solid #77a466;
+}
+
+.welcome {
+	height: auto;
+	float: left;
+}
+
+.welcome h2 {
+	color: #77a466;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px 0;
+}
+
+
+.welcome p {
+	padding: 0;
+	line-height: 25px;
+}
+
+/***********BOTTOM SECTION***********/
+
+.menu, .reviews, .contact {
+	float:left;
+	width:399px;
+	height:auto;
+	border-top: 1px solid #dedbdc;
+}
+
+.menu h3 {
+	padding: 10px 0;
+}
+
+.menu-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.menu-list li {
+	color: #77a466;
+	font-size: 16px;
+	line-height: 28px;
+	padding: 10px 0;
+}
+
+.reviews {
+	border-left: 1px solid #dedbdc;
+	border-right: 1px solid #dedbdc;
+}
+
+.reviews p { 
+	padding-left: 30px;
+	padding-right: 30px;
+	line-height: 21px;
+	margin-bottom: 35px;
+ }
+
+.contact p {
+	line-height: 24px;
+	padding-left: 30px;
+}
+
+.reviews h3, .contact h3 {
+	padding: 10px 30px;
+}
+
+/***********FOOTER***********/
+
+footer {
+	border-top: 1px solid #dedbdc;
+	margin: 0 auto;
+	height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	clear: both;
+}
+
+footer span {
+	font-family:'Pinyon Script', cursive;
+	color: #77a466;
+	text-transform: lowercase;
+}
