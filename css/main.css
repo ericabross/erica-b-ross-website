@@ -201,11 +201,6 @@ header h2 span {
     margin-bottom: 2%;
 }
 
-
-
-
-
-
 nav {
     padding: 10px 0;
 }
@@ -228,30 +223,31 @@ nav ul li a {
     }
 
 
-
-
-
 /***********ABOUT**********/
 
 #about {
-    background-color: #fff8c6;
+    background-color: #ffcccc;
     width: 100%;
     height: auto;
 }
+
+/* do these need to be here? */
 
 .mobile-section-header {
     visibility: visible;
 }
 
 .tablet-section-header {
-    visibility: hidden;
+    display: none;
 }
+
+/* do these need to be here? */
 
 #about img {
     border: 5px solid white;
-    width: 32%;
-    margin-right: 33%;
-    margin-left: 33%;
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
     margin-bottom: 0;
 }
 
@@ -270,7 +266,7 @@ nav ul li a {
 }
 
 #skills {
-    background-color: #fff8c6;
+    background-color: #ffcccc;
     text-align: center;
     display: flex;
     line-height: 1.25em;
@@ -293,17 +289,27 @@ nav ul li a {
 /***********PORTFOLIO**********/
 
 
+
+
+.portfolio-buttons-tablet {
+    display: none;
+}
+
 #portfolio {
-    background-color: #ffcccc;
-    padding-left: 5%;
+    background: url('../img/polkadots.png');
+    
 }
 
 #portfolio .full-width {
     padding: 5% 0;
 }
 
+#portfolio h1 {
+    background-color: white;
+    padding-left: 5%;
+}
+
 #portfolio img {
-    border: 3px solid #fff8c6;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 10%;
@@ -313,8 +319,13 @@ nav ul li a {
 #portfolio h2 {
     font-family: 'prata', serif;
     font-size: 1.25em;
-    color: #66cccc;
+    color: #b26791;
     text-align: center;
+}
+
+#other-projects {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #portfolio p {
@@ -325,7 +336,7 @@ nav ul li a {
 /***********CONTACT**********/
 
 #contact {
-    background-color: #fff8c6;
+    background-color: #b26791;
     height: auto;
 }
 
@@ -337,6 +348,7 @@ nav ul li a {
 }
 
 #contact h1 {
+    color: white;
     margin-left: 5%;
     margin-top: 0;
     padding-top: 5%;
@@ -553,7 +565,18 @@ nav ul li a {
 
 /***********PORTFOLIO**********/
 
-    
+    .portfolio-buttons-mobile {
+        display: none;
+    }
+
+.portfolio-buttons-tablet {
+        visibility: visible;
+    }
+
+
+
+
+
     .portfolio-buttons {
         float: left;
         width: 38%;
