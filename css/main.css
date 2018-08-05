@@ -110,6 +110,10 @@ body {
     font-family: 'Questrial', sans-serif;
 }
 
+header {
+    background: url('../img/polkadots.png');
+}
+
 h1 {
     color: #b26791;
     font-family: 'Abril Fatface', cursive;
@@ -145,21 +149,62 @@ img {
     height: auto;
 }
 
-.mobile-welcome {
+/* .mobile-welcome {
     width: 100%;
     height: auto;
-}
+} */
 
 /***********HOME**********/
 
 
-.welcome-full-width {
+.welcome {
+    background-image: url('../img/workspace-ericabross-logo.png');
+    background-size: cover;
     width: 100%;
-    height: auto;
+    min-height: 280px;
     margin: auto;
     position: relative;
-    text-align: center;
 }
+
+.greeting-text {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 58%;
+    margin-left: 2%;
+
+}
+
+header h2 {
+    font-family: 'prata', serif;
+    font-size: .75em;
+    margin-top: 0;
+    text-align: justify;
+}
+
+header h2 span {
+    color: #b26791;
+}
+
+.contact-button {
+    float: left;
+    width: 38%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#message-me {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 2%;
+}
+
+
+
+
+
 
 nav {
     padding: 10px 0;
@@ -182,38 +227,7 @@ nav ul li a {
     text-transform: uppercase;
     }
 
-.bottom-left {
-    position: absolute;
-    margin-bottom: 2%;
-    margin-left: 2%;
-}
 
-.bottom-right {
-    position: absolute;
-    margin-bottom: 2%;
-    margin-right: 2%;
-}
-
-header h2 {
-    font-family: 'prata', serif;
-    font-size: 0.75em;
-    margin-top: 0;
-  float: left;
-    padding-top: 5%;
-    text-align: justify;
-    width: 55%;
-}
-
-header h2 span {
-    color: #b26791;
-}
-
-#message-me {
-    float:left;
-    width: 50%;
-    
-    padding-bottom: 5%;
-}
 
 
 
