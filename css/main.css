@@ -158,11 +158,12 @@ img {
 
 
 .welcome {
-    background-image: url('../img/workspace-ericabross-logo.png');
-    background-size: cover;
     width: 100%;
-    min-height: 280px;
+    max-width: 1000px;
     margin: auto;
+    padding-bottom: 66.67%; /*makes background image responsive*/
+    background: url('../img/workspace-ericabross-logo.png') center no-repeat;
+    background-size: contain; /* or cover???*/
     position: relative;
 }
 
@@ -210,8 +211,8 @@ nav ul li {
     list-style-type: none;
     text-align: center;
     line-height: 4.5em;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 nav ul li a {
@@ -231,8 +232,6 @@ nav ul li a {
     height: auto;
 }
 
-/* do these need to be here? */
-
 .mobile-section-header {
     visibility: visible;
 }
@@ -241,7 +240,6 @@ nav ul li a {
     display: none;
 }
 
-/* do these need to be here? */
 
 #about img {
     border: 5px solid white;
@@ -287,8 +285,6 @@ nav ul li a {
 }
 
 /***********PORTFOLIO**********/
-
-
 
 
 .portfolio-buttons-tablet {
@@ -495,44 +491,35 @@ nav ul li a {
 
     /***********HOME**********/
 
+    
+    /* nav ul li {
+        padding-left: 10%;
+    } */
+
     nav ul li a {
         font-size: 1.875em;
     }   
 
     header h2 {
-        float:left;
-        font-size: 1.75em;
-        margin-top: 0;
-        margin-left: 5%;
-        padding-top: 5%;
-        text-align: justify;
-        width: 69%;
+        font-size: 1.5em;
+        
     }
-
-    #message-me {
-        float: left;
-        width: 11%;
-        padding-right: 5%;
-        padding-left: 8%;
-        padding-top:4% ;
-    }
-
 
     /***********ABOUT**********/
 
     .mobile-section-header {
-        visibility: hidden;
+        display: none;
     }
 
     .tablet-section-header {
-        visibility: visible;
+        display: inline-block;
     }
 
     .about-pic {
         width: 33%;
         float: left;
         margin-left: 5%;
-        margin-top: 4%;
+        margin-top: 15%;
     }
 
     .bio {
@@ -565,27 +552,74 @@ nav ul li a {
 
 /***********PORTFOLIO**********/
 
+    
+    #portfolio h1 {
+        margin-top: -5%;
+    }
+
     .portfolio-buttons-mobile {
         display: none;
-    }
+    } /*Hide mobile portfolio*/
 
-.portfolio-buttons-tablet {
-        visibility: visible;
-    }
-
-
-
-
-
-    .portfolio-buttons {
+    .portfolio-buttons-tablet {
+        display: block;
+        position: relative;
         float: left;
-        width: 38%;
-        margin: 5%;
+        width: 50%;
+        margin-top: -4.1%;
+    }
+
+    .portfolio-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;}
+
+    .jubilee-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #ffcccc;
+    }
+
+    .portfolio-buttons-tablet:hover .jubilee-overlay {
+        opacity: 1;
     }
 
 
     #portfolio h2 {
         font-size: 1.5em;
+    }
+
+    #portfolio a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .jubilee-overlay-text {
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .color-block {
+        background: #b26791;
+        float: left;
+        width: 50%;
+        height: auto;
     }
 
 
@@ -629,7 +663,7 @@ nav ul li a {
         clear: both;
     }
 
-    li {
+    #contact li {
         padding-right: 10%;
     }
 
@@ -745,6 +779,7 @@ nav ul li a {
     #portfolio h2 {
         font-size: 2.25em;
     }
+
 
 /***********CONTACT**********/
 
