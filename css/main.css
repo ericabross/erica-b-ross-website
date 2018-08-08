@@ -108,6 +108,7 @@ html {
 body {
     color: #333333;
     font-family: 'Questrial', sans-serif;
+    overflow: hidden !important;
 }
 
 header {
@@ -213,6 +214,7 @@ nav ul li {
     line-height: 4.5em;
     margin-left: 25%;
     margin-right: 25%;
+    margin-bottom: -1%;
 }
 
 nav ul li a {
@@ -292,8 +294,7 @@ nav ul li a {
 }
 
 #portfolio {
-    background: url('../img/polkadots.png');
-    
+    background: url('../img/polkadots.png');   
 }
 
 #portfolio .full-width {
@@ -555,11 +556,12 @@ nav ul li a {
     
     #portfolio h1 {
         margin-top: -5%;
-        margin-left: -2%;
+        margin-bottom: -1%;
     }
 
     #portfolio .full-width {
-        margin-left: 2%;
+        margin-left: ;
+        margin-bottom:;
     }
 
     .portfolio-buttons-mobile {
@@ -570,8 +572,8 @@ nav ul li a {
         display: inline-block;
         position: relative;
         float: left;
-        width: 48%;
-        padding-bottom: 33.3%;
+        width: 50%;
+        padding-bottom: 33.3%; /*makes images appear*/
     }
 
     #portfolio h2 {
@@ -582,6 +584,8 @@ nav ul li a {
         text-decoration: none;
         color: #333;
     }
+
+                            /* JUBILEE HOVER OVERLAY */
 
     #portfolio-img-jubilee {
         background: url('../img/jubilee-austen-preview.png') center no-repeat;
@@ -605,6 +609,11 @@ nav ul li a {
         opacity: 1;
     }
 
+    .portfolio-buttons-tablet:active .jubilee-overlay {
+        opacity: 1;
+    } /* hover for touch screens */
+
+
     .jubilee-overlay-text {
         position: absolute;
         text-align: center;
@@ -612,13 +621,252 @@ nav ul li a {
         padding: 25%;
     }
 
+                            /* ROGUE HOVER OVERLAY */
+    #portfolio-img-rogue {
+        background: url('../img/rogue-pickings-preview.png') center no-repeat;
+        background-size: cover;
+    }
+
+    .rogue-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #66cccc;
+    }
+
+    .portfolio-buttons-tablet:hover .rogue-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-tablet:active .rogue-overlay {
+        opacity: 1;
+    } /* hover for touchscreens */
+
+
+    .rogue-overlay-text {
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        padding: 20%;
+    }
+
+                            /* UNPLUGGED HOVER OVERLAY */
+    #portfolio-img-unplugged {
+        background: url('../img/unplugged-preview.png') center no-repeat;
+        background-size: cover;
+    }
+
+    .unplugged-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #b26791;
+    }
+
+    .portfolio-buttons-tablet:hover .unplugged-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-tablet:active .unplugged-overlay {
+        opacity: 1;
+    } /* hover for touchscreens */
+
+
+    .unplugged-overlay-text {
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        padding: 20%;
+    }
+                            
+                            /* GRIND BRANDING HOVER OVERLAY */
+    #portfolio-img-grind-branding {
+        background: url('../img/grind-branding-guide-preview.png') center no-repeat;
+        background-size: cover;
+    }
+
+    .grind-branding-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #fff8c6;
+    }
+
+    .portfolio-buttons-tablet:hover .grind-branding-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-tablet:active .grind-branding-overlay {
+        opacity: 1;
+    } /* hover for touchscreens */
+
+    .grind-branding-overlay-text {
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        padding: 20%;
+    }
+
+                            /* GRIND LANDING HOVER OVERLAY */
+    #portfolio-img-grind-landing {
+        background: url('../img/grind-landing-page-preview.png') center no-repeat;
+        background-size: cover;
+    }
+
+    .grind-landing-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #ffcccc;
+    }
+
+    .portfolio-buttons-tablet:hover .grind-landing-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-tablet:active .grind-landing-overlay {
+        opacity: 1;
+    } /* hover for touchscreens */
+
+    .grind-landing-overlay-text {
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        padding: 25%;
+    }
+                            
+                            /* MAGIC 8-BALL HOVER OVERLAY */
+    #portfolio-img-magic-8-ball {
+        background: url('../img/magic-8-ball-js-preview.png') center no-repeat;
+        background-size: cover;
+    }
+
+    .magic-8-ball-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #66cccc;
+    }
+
+    .portfolio-buttons-tablet:hover .magic-8-ball-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-tablet:active .magic-8-ball-overlay {
+        opacity: 1;
+    } /* hover for touchscreens */
+
+    .magic-8-ball-overlay-text {
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        padding: 25%;
+    }
+                            
+                            /* ELECTION HOVER OVERLAY */
+    #portfolio-img-election {
+        background: url('../img/election-map-js-preview.png') center no-repeat;
+        background-size: cover;
+    }
+
+    .election-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #b26791;
+    }
+
+    .portfolio-buttons-tablet:hover .election-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-tablet:active .election-overlay {
+        opacity: 1;
+    } /* hover for touchscreens */
+
+    .election-overlay-text {
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        padding: 25%;
+    }
+                            
+                            /* LOLCAT HOVER OVERLAY */
+    #portfolio-img-lolcat {
+        background: url('../img/lol-cat-clock-js-preview.png') center no-repeat;
+        background-size: cover;
+    }
+
+    .lolcat-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #fff8c6;
+    }
+
+    .portfolio-buttons-tablet:hover .lolcat-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-tablet:active .lolcat-overlay {
+        opacity: 1;
+    } /* hover for touchscreens */
+
+    .lolcat-overlay-text {
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        padding: 25%;
+    }
+
+                            /* COLOR BLOCKS */
+
     #color-block-wine {
         display: inline;
         background: #b26791;
-        float: left;
-        
-        height: auto;
-        
+        float: left;        
         position: relative;
     }
 
@@ -626,8 +874,6 @@ nav ul li a {
         float: left;
         display: inline;
         background: #ffcccc;
-    
-        
         position: relative;
     }
 
@@ -635,7 +881,6 @@ nav ul li a {
         display: inline;
         float: left;
         background: #66cccc;
-        
         position: relative;
     }
 
@@ -643,7 +888,6 @@ nav ul li a {
         display: inline;
         float: left;
         background: #fff8c6;
-        
         position: relative;
     }
 
