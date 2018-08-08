@@ -555,6 +555,11 @@ nav ul li a {
     
     #portfolio h1 {
         margin-top: -5%;
+        margin-left: -2%;
+    }
+
+    #portfolio .full-width {
+        margin-left: 2%;
     }
 
     .portfolio-buttons-mobile {
@@ -562,21 +567,26 @@ nav ul li a {
     } /*Hide mobile portfolio*/
 
     .portfolio-buttons-tablet {
-        display: block;
+        display: inline-block;
         position: relative;
         float: left;
-        width: 50%;
-        margin-top: -4.1%;
+        width: 48%;
+        padding-bottom: 33.3%;
     }
 
-    .portfolio-img {
-        display: block;
-        width: 100%;
-        height: auto;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;}
+    #portfolio h2 {
+        font-size: 1.5em;
+    }
+
+    #portfolio a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    #portfolio-img-jubilee {
+        background: url('../img/jubilee-austen-preview.png') center no-repeat;
+        background-size: cover;
+    }
 
     .jubilee-overlay {
         position: absolute;
@@ -595,33 +605,47 @@ nav ul li a {
         opacity: 1;
     }
 
-
-    #portfolio h2 {
-        font-size: 1.5em;
-    }
-
-    #portfolio a {
-        text-decoration: none;
-        color: #333;
-    }
-
     .jubilee-overlay-text {
         position: absolute;
         text-align: center;
         text-decoration: none;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        margin-left: 25%;
-        margin-right: 25%;
+        padding: 25%;
     }
 
-    .color-block {
+    #color-block-wine {
+        display: inline;
         background: #b26791;
         float: left;
-        width: 50%;
+        
         height: auto;
+        
+        position: relative;
     }
 
+    #color-block-pink {
+        float: left;
+        display: inline;
+        background: #ffcccc;
+    
+        
+        position: relative;
+    }
+
+    #color-block-blue {
+        display: inline;
+        float: left;
+        background: #66cccc;
+        
+        position: relative;
+    }
+
+    #color-block-yellow {
+        display: inline;
+        float: left;
+        background: #fff8c6;
+        
+        position: relative;
+    }
 
 /***********CONTACT**********/
 
