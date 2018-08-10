@@ -108,11 +108,11 @@ html {
 body {
     color: #333333;
     font-family: 'Questrial', sans-serif;
-    overflow: hidden !important;
 }
 
 header {
     background: url('../img/polkadots.png');
+    width: 100%;
 }
 
 h1 {
@@ -142,7 +142,7 @@ img {
     margin: 0 auto;
 }
 
-.navigation {
+.navigation-mobile {
     background: url('../img/polkadots.png');
     border-bottom: 3px solid #999999;
     border-top: 3px solid #999999;
@@ -158,14 +158,22 @@ img {
 /***********HOME**********/
 
 
-.welcome {
+.welcome-mobile {
     width: 100%;
     max-width: 1000px;
     margin: auto;
     padding-bottom: 66.67%; /*makes background image responsive*/
     background: url('../img/workspace-ericabross-logo.png') center no-repeat;
-    background-size: contain; /* or cover???*/
+    background-size: contain;
     position: relative;
+}
+
+.welcome-desktop {
+    display: none;
+}
+
+.navigation-desktop {
+    display: none;
 }
 
 .greeting-text {
@@ -175,7 +183,6 @@ img {
     left: 0;
     width: 58%;
     margin-left: 2%;
-
 }
 
 header h2 {
@@ -203,11 +210,15 @@ header h2 span {
     margin-bottom: 2%;
 }
 
-nav {
+.navigation-mobile nav {
     padding: 10px 0;
 }
 
-nav ul li {
+ul li {
+    list-style-type: none;
+}
+
+.navigation-mobile ul li {
     background-color: white;
     list-style-type: none;
     text-align: center;
@@ -562,6 +573,7 @@ nav ul li a {
     #portfolio .full-width {
         margin-left: ;
         margin-bottom:;
+        height: auto;
     }
 
     .portfolio-buttons-mobile {
@@ -574,6 +586,8 @@ nav ul li a {
         float: left;
         width: 50%;
         padding-bottom: 33.3%; /*makes images appear*/
+        overflow: hidden;
+        height: auto;
     }
 
     #portfolio h2 {
@@ -590,6 +604,8 @@ nav ul li a {
     #portfolio-img-jubilee {
         background: url('../img/jubilee-austen-preview.png') center no-repeat;
         background-size: cover;
+        overflow-x: hidden;
+        height: auto;
     }
 
     .jubilee-overlay {
@@ -618,13 +634,15 @@ nav ul li a {
         position: absolute;
         text-align: center;
         text-decoration: none;
-        padding: 25%;
+        padding: 20%;
     }
 
                             /* ROGUE HOVER OVERLAY */
     #portfolio-img-rogue {
         background: url('../img/rogue-pickings-preview.png') center no-repeat;
         background-size: cover;
+        overflow-x: hidden;
+        height: auto;
     }
 
     .rogue-overlay {
@@ -660,6 +678,8 @@ nav ul li a {
     #portfolio-img-unplugged {
         background: url('../img/unplugged-preview.png') center no-repeat;
         background-size: cover;
+        overflow-x: hidden;
+        height: auto;
     }
 
     .unplugged-overlay {
@@ -695,6 +715,8 @@ nav ul li a {
     #portfolio-img-grind-branding {
         background: url('../img/grind-branding-guide-preview.png') center no-repeat;
         background-size: cover;
+        overflow-x: hidden;
+        height: auto;
     }
 
     .grind-branding-overlay {
@@ -722,13 +744,15 @@ nav ul li a {
         position: absolute;
         text-align: center;
         text-decoration: none;
-        padding: 20%;
+        padding: 15%;
     }
 
                             /* GRIND LANDING HOVER OVERLAY */
     #portfolio-img-grind-landing {
         background: url('../img/grind-landing-page-preview.png') center no-repeat;
         background-size: cover;
+        overflow-x: hidden;
+        height: auto;
     }
 
     .grind-landing-overlay {
@@ -756,13 +780,15 @@ nav ul li a {
         position: absolute;
         text-align: center;
         text-decoration: none;
-        padding: 25%;
+        padding: 20%;
     }
                             
                             /* MAGIC 8-BALL HOVER OVERLAY */
     #portfolio-img-magic-8-ball {
         background: url('../img/magic-8-ball-js-preview.png') center no-repeat;
         background-size: cover;
+        overflow-x: hidden;
+        height: auto;
     }
 
     .magic-8-ball-overlay {
@@ -790,13 +816,15 @@ nav ul li a {
         position: absolute;
         text-align: center;
         text-decoration: none;
-        padding: 25%;
+        padding: 20%;
     }
                             
                             /* ELECTION HOVER OVERLAY */
     #portfolio-img-election {
         background: url('../img/election-map-js-preview.png') center no-repeat;
         background-size: cover;
+        overflow-x: hidden;
+        height: auto;
     }
 
     .election-overlay {
@@ -824,13 +852,15 @@ nav ul li a {
         position: absolute;
         text-align: center;
         text-decoration: none;
-        padding: 25%;
+        padding: 20%;
     }
                             
                             /* LOLCAT HOVER OVERLAY */
     #portfolio-img-lolcat {
         background: url('../img/lol-cat-clock-js-preview.png') center no-repeat;
         background-size: cover;
+        overflow-x: hidden;
+        height: auto;
     }
 
     .lolcat-overlay {
@@ -858,7 +888,7 @@ nav ul li a {
         position: absolute;
         text-align: center;
         text-decoration: none;
-        padding: 25%;
+        padding: 20%;
     }
 
                             /* COLOR BLOCKS */
@@ -868,6 +898,9 @@ nav ul li a {
         background: #b26791;
         float: left;        
         position: relative;
+        overflow-x: hidden;
+        overflow-y:scroll;
+        height: auto;
     }
 
     #color-block-pink {
@@ -875,6 +908,9 @@ nav ul li a {
         display: inline;
         background: #ffcccc;
         position: relative;
+        overflow-x: hidden;
+        overflow-y:scroll;
+        height: auto;
     }
 
     #color-block-blue {
@@ -882,6 +918,9 @@ nav ul li a {
         float: left;
         background: #66cccc;
         position: relative;
+        overflow-x: hidden;
+        overflow-y:scroll;
+        height: auto;
     }
 
     #color-block-yellow {
@@ -889,6 +928,9 @@ nav ul li a {
         float: left;
         background: #fff8c6;
         position: relative;
+        overflow-x: hidden;
+        overflow-y:scroll;
+        height: auto;
     }
 
 /***********CONTACT**********/
@@ -958,51 +1000,85 @@ nav ul li a {
 
     /***********HOME**********/
 
-   .mobile-welcome {
+    .navigation-mobile {
         display: none;
     }
 
-    .navigation {
+    .nav-wrapper {
+        background: white;
+        width: 100%;
+        height: auto;
+        padding-bottom: 0.5%;
+        text-align: center;
+    }
+
+    .navigation-desktop {
+        display: inline-block;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .navigation-desktop nav ul li {
+        display: inline;
         float: left;
-        width: 25%;
-        border-top: none;
-        border-right: 3px solid #999999;
-        background: url('../img/polkadots.png') repeat;
-        overflow: visible;
-        height: 830px;
+        width: 33.3%
+     } 
+
+     .navigation-desktop li a {
+       display: block;
+     } 
+         
+    .welcome-mobile {
+        display: none;
     }
 
-     .welcome-contact {
+    .welcome-desktop {
+        display: inline;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        max-width: 1200px;
+    }
+
+    .workspace-img {
+        display: block;
+        width: 75%;
+        margin: auto;
+        max-width: 1200px;
+        position: relative;
+        height: auto; /* hmmmm...*/
+    }
+
+    .greeting-text {
+        display: none;
+    }
+
+    .contact-button {
+        display: none;
+    }
+
+    .greeting-text-desktop  {
         float: left;
-        overflow: auto;
-        width: 74%;
-        background: url('../img/workspace-ericabross-logo.png') no-repeat #fff8c6;
-        background-size: 100%;
-        overflow: visible;
-        height: 830px;
-    } 
-
-    nav {
-        padding-top: 45%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;/* hmmmm...*/
     }
 
-    nav ul li {
-        text-align: right;
-        line-height: 100px;
-    }
-
-    header h2 {
-        margin-top: 64%;
-        margin-left: 12%;
-        width: 52%;
-        line-height: 1.5em;
+    .contact-button-desktop {
+        float: left;
+        position: absolute;
+        top: 50%;
+        right:10%;
+        width: 30%;
     }
 
     #message-me {
-        float: left;
-        margin-top: 63%;
+        width: 50%;
     }
-
+   
+   
     /***********ABOUT**********/
 
     
