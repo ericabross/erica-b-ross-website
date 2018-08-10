@@ -1032,6 +1032,14 @@ nav ul li a {
         display: none;
     }
 
+    .greeting-text {
+        display: none;
+    }
+
+    .contact-button {
+        display: none;
+    }
+
     .welcome-desktop {
         display: inline;
         margin: 0 auto;
@@ -1041,37 +1049,29 @@ nav ul li a {
     }
 
     .workspace-img {
+        background:url('../img/workspace-ericabross-logo.png') center no-repeat;
         display: block;
         width: 75%;
         margin: auto;
+        min-height: 627px;
+        min-width: 960px;
         max-width: 1200px;
         position: relative;
-        height: auto; /* hmmmm...*/
     }
 
-    .greeting-text {
-        display: none;
-    }
-
-    .contact-button {
-        display: none;
-    }
-
-    .greeting-text-desktop  {
-        float: left;
+    .greeting-text-desktop {
         position: absolute;
+        left: 12%;
         bottom: 0;
-        left: 0;
-        width: 50%;
-        height: 100%;/* hmmmm...*/
+        width: 48%;
+           
     }
 
     .contact-button-desktop {
-        float: left;
         position: absolute;
-        top: 50%;
-        right:10%;
-        width: 30%;
+        bottom:0;
+        right:0; 
+        width: 40%;
     }
 
     #message-me {
@@ -1081,9 +1081,8 @@ nav ul li a {
    
     /***********ABOUT**********/
 
-    
     .about-pic {
-        margin-top: 0;
+        margin-top: 12%;
     }
 
     .bio {
@@ -1112,7 +1111,7 @@ nav ul li a {
 /***********PORTFOLIO**********/
 
     #portfolio {
-        margin: auto;
+        margin-top:0 auto;
     }
 
     #portfolio img {
@@ -1122,6 +1121,7 @@ nav ul li a {
 
     #portfolio h2 {
         font-size: 2.25em;
+        margin-top: -5%;
     }
 
 
