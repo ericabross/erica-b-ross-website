@@ -304,6 +304,10 @@ nav ul li a {
     display: none;
 }
 
+.portfolio-buttons-desktop {
+    display: none;
+}
+
 #portfolio {
     background: url('../img/polkadots.png');   
 }
@@ -363,6 +367,7 @@ nav ul li a {
 }
 
 #contact h2 {
+    color: white;
     font-family: 'prata', serif;
     font-size: 1.25em;
     margin-left: 7%;
@@ -372,7 +377,7 @@ nav ul li a {
 
 #contact a {
     text-decoration: none;
-    color: #333333;
+    color: white;
 }
 
 #contact ul {
@@ -571,8 +576,6 @@ nav ul li a {
     }
 
     #portfolio .full-width {
-        margin-left: ;
-        margin-bottom:;
         height: auto;
     }
 
@@ -973,6 +976,11 @@ nav ul li a {
         clear: both;
     }
 
+
+    #contact ul img {
+        width: 80%;
+    }
+
     #contact li {
         padding-right: 10%;
     }
@@ -1114,14 +1122,148 @@ nav ul li a {
         margin-top:0 auto;
     }
 
+    #portfolio .full-width {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
     #portfolio img {
         width: 100%;
-        
+    }
+
+    #portfolio h1 {
+        margin-top:0;
     }
 
     #portfolio h2 {
         font-size: 2.25em;
-        margin-top: -5%;
+    }
+
+    .portfolio-buttons-tablet {
+        display: none;
+    }
+
+    #color-block-pink.portfolio-buttons-tablet {
+        display: none;
+    }
+
+    #color-block-wine.portfolio-buttons-tablet {
+        display: none;
+    }
+
+    #color-block-blue.portfolio-buttons-tablet {
+        display: none;
+    }
+
+    #color-block-yellow.portfolio-buttons-tablet {
+        display: none;
+    }
+
+    .portfolio-buttons-desktop {
+        display: inline-block;
+        font-size: .75em;
+        position: relative;
+        float: left;
+        width: 33.3%;
+        padding-bottom: 21.1%;
+        overflow: hidden;
+        height: auto;
+    }
+
+    .portfolio-buttons-desktop:hover .jubilee-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-desktop:active .jubilee-overlay {
+        opacity: 1;
+    } /* hover for touch screens */
+
+    .jubilee-overlay-text {
+        padding: 15%;
+    }
+
+    .portfolio-buttons-desktop:hover .rogue-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-desktop:active .rogue-overlay {
+        opacity: 1;
+    } /* hover for touch screens */
+
+    .rogue-overlay-text {
+        padding: 15%;
+    }
+
+    .portfolio-buttons-desktop:hover .unplugged-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-desktop:active .unplugged-overlay {
+        opacity: 1;
+    } /* hover for touch screens */
+
+    .unplugged-overlay-text {
+        padding: 15%;
+    }
+
+    .portfolio-buttons-desktop:hover .grind-branding-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-desktop:active .grind-branding-overlay {
+        opacity: 1;
+    } /* hover for touch screens */
+
+    .grind-branding-overlay-text {
+        padding: 10%;
+    }
+
+    .portfolio-buttons-desktop:hover .grind-landing-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-desktop:active .grind-landing-overlay {
+        opacity: 1;
+    } /* hover for touch screens */
+
+    .grind-landing-overlay-text {
+        padding: 12%;
+    }
+
+    .portfolio-buttons-desktop:hover .magic-8-ball-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-desktop:active .magic-8-ball-overlay {
+        opacity: 1;
+    } /* hover for touch screens */
+
+    .magic-8-ball-overlay-text {
+        padding: 15%;
+    }
+
+    .portfolio-buttons-desktop:hover .election-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-desktop:active .election-overlay {
+        opacity: 1;
+    } /* hover for touch screens */
+
+    .election-overlay-text {
+        padding: 15%;
+    }
+
+    .portfolio-buttons-desktop:hover .lolcat-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-desktop:active .lolcat-overlay {
+        opacity: 1;
+    } /* hover for touch screens */
+
+    .lolcat-overlay-text {
+        padding: 15%;
     }
 
 
@@ -1129,11 +1271,14 @@ nav ul li a {
 
 
     .two-thirds-width {
-        width: 30%;
+        margin-left: 0;
+        width: 33%;
     }
 
 
     #contact-img {
+        width: 95%;
+        margin-left: 3%;
         margin-bottom: 20%;
     }
     #contact h1 {
@@ -1146,12 +1291,12 @@ nav ul li a {
     }
 
     .contact-icons {
-        width: 7%;
+        width: 10%;
     }
  
     .social-media {
         float: left;
-        width: 30%;
+        width: 33%;
         clear: none;
     }
 
@@ -1163,8 +1308,16 @@ nav ul li a {
         margin-top: 35%;
     }
 
-    .social-media li {
-        padding-right: 5%;
+    #contact ul img {
+        width: 100%;
+    }
+
+    #contact ul {
+        padding-left: 0;
+    }
+
+    #contact li {
+        padding-right: 8%;
     }
 
 }
