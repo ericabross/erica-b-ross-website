@@ -197,17 +197,22 @@ header h2 span {
 }
 
 .contact-button {
-    float: left;
-    width: 38%;
+    /* position */
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 2%;
+    right: 8%;
+    /* create circle */
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: white;
 }
 
-#message-me {
-    width: 50%;
-    margin-left: 25%;
-    margin-bottom: 2%;
+
+.contact-button p {
+    color: #66cccc;
+    text-align: center;
+    padding: 10% 10% 10% 10%;
 }
 
 .navigation-mobile nav {
@@ -522,6 +527,20 @@ nav ul li a {
         
     }
 
+    .contact-button {
+    /* position */
+    position: absolute;
+    bottom: 2%;
+    right: 8%;
+    /* create circle */
+    width: 200px;
+    height: 200px;
+    }
+
+    .contact-button p {
+        padding: 15% 15% 15% 15% ;
+    }
+
     /***********ABOUT**********/
 
     .mobile-section-header {
@@ -639,6 +658,46 @@ nav ul li a {
         text-decoration: none;
         padding: 20%;
     }
+
+                        /* WORDPRESS HOVER OVERLAY */
+
+    #portfolio-img-wordpress {
+        background: url('../img/wordpress-preview.png') center no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+        height: auto;
+    }
+
+    .wordpress-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #b26791;
+    }
+
+    .portfolio-buttons-tablet:hover .wordpress-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-tablet:active .wordpress-overlay {
+        opacity: 1;
+    } /* hover for touch screens */
+
+
+    .wordpress-overlay-text {
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        padding: 20%;
+    }
+
+
 
                             /* ROGUE HOVER OVERLAY */
     #portfolio-img-rogue {
@@ -1076,16 +1135,23 @@ nav ul li a {
     }
 
     .contact-button-desktop {
+        /* position */
         position: absolute;
-        bottom:0;
-        right:0; 
-        width: 40%;
+        bottom: 2%;
+        right: 8%;
+        /* create circle */
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: white;
     }
 
-    #message-me {
-        width: 50%;
+
+    .contact-button-desktop p {
+        color: #66cccc;
+        text-align: center;
+        padding: 15%;
     }
-   
    
     /***********ABOUT**********/
 
@@ -1182,6 +1248,19 @@ nav ul li a {
         padding: 15%;
     }
 
+    .portfolio-buttons-desktop:hover .wordpress-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-desktop:active .wordpress-overlay {
+        opacity: 1;
+    } /* hover for touch screens */
+
+    .wordpress-overlay-text {
+        padding: 15%;
+    }
+
+
     .portfolio-buttons-desktop:hover .rogue-overlay {
         opacity: 1;
     }
@@ -1225,10 +1304,6 @@ nav ul li a {
     .portfolio-buttons-desktop:active .grind-landing-overlay {
         opacity: 1;
     } /* hover for touch screens */
-
-    .grind-landing-overlay-text {
-        padding: 12%;
-    }
 
     .portfolio-buttons-desktop:hover .magic-8-ball-overlay {
         opacity: 1;

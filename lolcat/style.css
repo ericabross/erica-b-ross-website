@@ -29,6 +29,9 @@ h4 #clock {
   display: block;
   padding: 5px 0px;
 }
+
+
+
 h1, h2, h3, h6 {
   font-family: 'Bungee Shade', cursive;
 }
@@ -69,4 +72,12 @@ blockquote:after { content: '"'; }
 footer p {
   text-transform: uppercase;
   font-size: 12px;
+}
+
+@media screen and (max-width: 560px) {
+
+  #lolcat {
+    width: 100%;
+  }
+
 }
