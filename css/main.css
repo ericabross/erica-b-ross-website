@@ -187,7 +187,7 @@ img {
 
 header h2 {
     font-family: 'prata', serif;
-    font-size: .75em;
+    font-size: .95em;
     margin-top: 0;
     text-align: justify;
 }
@@ -258,7 +258,6 @@ nav ul li a {
     display: none;
 }
 
-
 #about img {
     border: 5px solid white;
     width: 50%;
@@ -273,10 +272,15 @@ nav ul li a {
     
 }
 
+.bio-text {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
 #about p {
     text-align: justify;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 50px;
+    padding-right: 50px;
     margin: 0;
     line-height: 2em;
 }
@@ -288,18 +292,24 @@ nav ul li a {
     line-height: 1.25em;
 }
 
+.skills-items {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 .skills-icons {
-    float: left;
+    display: flex;
+    flex-flow: column wrap;
+    align-self: flex-start;
+    align-items: center;
     width: 38%;
     margin: 5%;
  }
 
 #skills img {
     width: 85%;
-}
-
-.responsive {
-    clear: left;
 }
 
 /***********PORTFOLIO**********/
@@ -314,23 +324,32 @@ nav ul li a {
 }
 
 #portfolio {
-    background: url('../img/polkadots.png');   
+    background: url('../img/polkadots.png'); 
 }
 
 #portfolio .full-width {
-    padding: 5% 0;
+    padding: 5% 0 10% 0;
+}
+
+.portfolio-buttons-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
 }
 
 #portfolio h1 {
     background-color: white;
     padding-left: 5%;
+    margin-bottom: 40px;
 }
 
-#portfolio img {
-    margin-left: 5%;
-    margin-right: 5%;
+#portfolio img a {
     margin-top: 10%;
     width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
 #portfolio h2 {
@@ -338,6 +357,7 @@ nav ul li a {
     font-size: 1.25em;
     color: #b26791;
     text-align: center;
+    margin-bottom: 0;
 }
 
 #other-projects {
@@ -347,6 +367,8 @@ nav ul li a {
 
 #portfolio p {
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
 }
 
 
