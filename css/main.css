@@ -401,20 +401,9 @@ nav ul li a {
     margin-top: ;
 }
 
-
 #contact a {
     text-decoration: none;
     color: white;
-}
-
-#contact ul {
-    list-style: none;
-    margin: 0;
-    text-align: center;
-}
-
-#contact ul li {
-    display: inline-block;
 }
 
 #contact ul img {
@@ -425,10 +414,40 @@ nav ul li a {
     width: 60%;
 }
 
-.contact-icons {
-    width: 10%;
+#contact-img {
+    
 }
 
+.contact-icons {
+    width: 7%;
+}
+
+.contact-icons img {
+    width: 50%;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.social-media p {
+    height: 40px;
+    width: 40px;
+    background-color: #ffcccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media p i {
+  color: #b26791;
+  font-size: 2em;
+}
 
 /* ==========================================================================
    Helper classes
