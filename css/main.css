@@ -644,6 +644,7 @@ nav ul li a {
     #portfolio h1 {
         margin-top: -5%;
         margin-bottom: -1%;
+        padding-bottom: 1%;
     }
 
     #portfolio .full-width {
@@ -673,16 +674,16 @@ nav ul li a {
         color: #333;
     }
 
-                            /* JUBILEE HOVER OVERLAY */
+                            /* THE COLLINS HOVER OVERLAY */
 
-    #portfolio-img-jubilee {
-        background: url('../img/jubilee-austen-preview.png') center no-repeat;
+    #portfolio-img-collins {
+        background: url('../img/the-collins-preview.png') center no-repeat;
         background-size: cover;
         overflow-x: hidden;
         height: auto;
     }
 
-    .jubilee-overlay {
+    .collins-overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -695,26 +696,30 @@ nav ul li a {
         background-color: #ffcccc;
     }
 
-    .portfolio-buttons-tablet:hover .jubilee-overlay {
+    .portfolio-buttons-tablet:hover .collins-overlay {
         opacity: 1;
     }
 
-    .portfolio-buttons-tablet:active .jubilee-overlay {
+    .portfolio-buttons-tablet:active .collins-overlay {
         opacity: 1;
     } /* hover for touch screens */
 
 
-    .jubilee-overlay-text {
+    .collins-overlay-text {
         position: absolute;
         text-align: center;
         text-decoration: none;
         padding: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-                        /* WORDPRESS HOVER OVERLAY */
+                        /* ACCELERATE WORDPRESS HOVER OVERLAY */
 
     #portfolio-img-wordpress {
-        background: url('../img/wordpress-preview.png') center no-repeat;
+        background: url('../img/accelerate-wp-preview-wine.png') center no-repeat;
         background-size: cover;
         overflow-x: hidden;
         height: auto;
@@ -747,19 +752,23 @@ nav ul li a {
         text-align: center;
         text-decoration: none;
         padding: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 
 
-                            /* ROGUE HOVER OVERLAY */
-    #portfolio-img-rogue {
-        background: url('../img/rogue-pickings-preview.png') center no-repeat;
+                            /* CITY CYCLES HOVER OVERLAY */
+    #portfolio-img-city-cycles {
+        background: url('../img/city-cycles-preview-yellow.png') center no-repeat;
         background-size: cover;
         overflow-x: hidden;
         height: auto;
     }
 
-    .rogue-overlay {
+    .city-cycles-overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -769,19 +778,19 @@ nav ul li a {
         width: 100%;
         opacity: 0;
         transition: .5s ease;
-        background-color: #66cccc;
+        background-color: #fff8c6;
     }
 
-    .portfolio-buttons-tablet:hover .rogue-overlay {
+    .portfolio-buttons-tablet:hover .city-cycles-overlay {
         opacity: 1;
     }
 
-    .portfolio-buttons-tablet:active .rogue-overlay {
+    .portfolio-buttons-tablet:active .city-cycles-overlay {
         opacity: 1;
     } /* hover for touchscreens */
 
 
-    .rogue-overlay-text {
+    .city-cycles-overlay-text {
         position: absolute;
         text-align: center;
         text-decoration: none;
@@ -790,7 +799,7 @@ nav ul li a {
 
                             /* UNPLUGGED HOVER OVERLAY */
     #portfolio-img-unplugged {
-        background: url('../img/unplugged-preview.png') center no-repeat;
+        background: url('../img/unplugged-preview-blue.png') center no-repeat;
         background-size: cover;
         overflow-x: hidden;
         height: auto;
@@ -806,7 +815,7 @@ nav ul li a {
         width: 100%;
         opacity: 0;
         transition: .5s ease;
-        background-color: #b26791;
+        background-color: #66cccc;
     }
 
     .portfolio-buttons-tablet:hover .unplugged-overlay {
@@ -823,6 +832,10 @@ nav ul li a {
         text-align: center;
         text-decoration: none;
         padding: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
                             
                             /* GRIND BRANDING HOVER OVERLAY */
@@ -843,7 +856,7 @@ nav ul li a {
         width: 100%;
         opacity: 0;
         transition: .5s ease;
-        background-color: #fff8c6;
+        background-color: #ffcccc;
     }
 
     .portfolio-buttons-tablet:hover .grind-branding-overlay {
@@ -859,11 +872,15 @@ nav ul li a {
         text-align: center;
         text-decoration: none;
         padding: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
                             /* GRIND LANDING HOVER OVERLAY */
     #portfolio-img-grind-landing {
-        background: url('../img/grind-landing-page-preview.png') center no-repeat;
+        background: url('../img/grind-landing-page-preview-wine.png') center no-repeat;
         background-size: cover;
         overflow-x: hidden;
         height: auto;
@@ -879,7 +896,7 @@ nav ul li a {
         width: 100%;
         opacity: 0;
         transition: .5s ease;
-        background-color: #ffcccc;
+        background-color: #b26791;
     }
 
     .portfolio-buttons-tablet:hover .grind-landing-overlay {
@@ -895,11 +912,55 @@ nav ul li a {
         text-align: center;
         text-decoration: none;
         padding: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+                            /* DOROTHY DELONG HOVER OVERLAY */
+    #portfolio-img-delong {
+        background: url('../img/dorothy-delong-preview-yellow.png') center no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+        height: auto;
+    }
+
+    .delong-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #fff8c6;
+    }
+
+    .portfolio-buttons-tablet:hover .delong-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-tablet:active .delong-overlay {
+        opacity: 1;
+    } /* hover for touchscreens */
+
+    .delong-overlay-text {
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        padding: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
                             
                             /* MAGIC 8-BALL HOVER OVERLAY */
     #portfolio-img-magic-8-ball {
-        background: url('../img/magic-8-ball-js-preview.png') center no-repeat;
+        background: url('../img/magic-8-ball-js-preview-blue.png') center no-repeat;
         background-size: cover;
         overflow-x: hidden;
         height: auto;
@@ -931,120 +992,10 @@ nav ul li a {
         text-align: center;
         text-decoration: none;
         padding: 20%;
-    }
-                            
-                            /* ELECTION HOVER OVERLAY */
-    #portfolio-img-election {
-        background: url('../img/election-map-js-preview.png') center no-repeat;
-        background-size: cover;
-        overflow-x: hidden;
-        height: auto;
-    }
-
-    .election-overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #b26791;
-    }
-
-    .portfolio-buttons-tablet:hover .election-overlay {
-        opacity: 1;
-    }
-
-    .portfolio-buttons-tablet:active .election-overlay {
-        opacity: 1;
-    } /* hover for touchscreens */
-
-    .election-overlay-text {
-        position: absolute;
-        text-align: center;
-        text-decoration: none;
-        padding: 20%;
-    }
-                            
-                            /* LOLCAT HOVER OVERLAY */
-    #portfolio-img-lolcat {
-        background: url('../img/lol-cat-clock-js-preview.png') center no-repeat;
-        background-size: cover;
-        overflow-x: hidden;
-        height: auto;
-    }
-
-    .lolcat-overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #fff8c6;
-    }
-
-    .portfolio-buttons-tablet:hover .lolcat-overlay {
-        opacity: 1;
-    }
-
-    .portfolio-buttons-tablet:active .lolcat-overlay {
-        opacity: 1;
-    } /* hover for touchscreens */
-
-    .lolcat-overlay-text {
-        position: absolute;
-        text-align: center;
-        text-decoration: none;
-        padding: 20%;
-    }
-
-                            /* COLOR BLOCKS */
-
-    #color-block-wine {
-        display: inline;
-        background: #b26791;
-        float: left;        
-        position: relative;
-        overflow-x: hidden;
-        overflow-y:scroll;
-        height: auto;
-    }
-
-    #color-block-pink {
-        float: left;
-        display: inline;
-        background: #ffcccc;
-        position: relative;
-        overflow-x: hidden;
-        overflow-y:scroll;
-        height: auto;
-    }
-
-    #color-block-blue {
-        display: inline;
-        float: left;
-        background: #66cccc;
-        position: relative;
-        overflow-x: hidden;
-        overflow-y:scroll;
-        height: auto;
-    }
-
-    #color-block-yellow {
-        display: inline;
-        float: left;
-        background: #fff8c6;
-        position: relative;
-        overflow-x: hidden;
-        overflow-y:scroll;
-        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 /***********CONTACT**********/
@@ -1052,7 +1003,12 @@ nav ul li a {
     .hide {
         display: none;
     }
-.tablet-section-header {
+
+    #contact .mobile-section-header {
+        display: none;
+    }
+
+    .tablet-section-header {
         display: inline-block;
     }
 
@@ -1134,20 +1090,29 @@ nav ul li a {
     }
 
     .navigation-desktop {
-        display: inline-block;
-        width: 100%;
+        display: flex;
         max-width: 1200px;
+        padding-top: 10px;
+        margin:0 auto;
     }
 
-    .navigation-desktop nav ul li {
-        display: inline;
-        float: left;
-        width: 33.3%
-     } 
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 100%; 
+    }
 
-     .navigation-desktop li a {
-       display: block;
-     } 
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        max-width: 1200px;
+        padding-left: 0;
+        margin: 0;
+    }
          
     .welcome-mobile {
         display: none;
@@ -1184,8 +1149,7 @@ nav ul li a {
         position: absolute;
         left: 12%;
         bottom: 0;
-        width: 48%;
-           
+        width: 48%;         
     }
 
     .contact-button-desktop {
@@ -1200,7 +1164,6 @@ nav ul li a {
         background: white;
     }
 
-
     .contact-button-desktop p {
         color: #66cccc;
         text-align: center;
@@ -1209,18 +1172,24 @@ nav ul li a {
    
     /***********ABOUT**********/
 
-    .about-pic {
-        margin-top: 12%;
+    
+    #about .full-width {
+        padding: 2% 0 2% 0;
+
     }
 
-    .bio {
-        width:60%;
-        margin-top: 7%;
+
+    #about h1 {
+        padding-bottom: 0;
+    }
+
+    .about-pic {
+        justify-self: end;
+        width: 70%;
     }
 
     #about p {
         line-height: 2em;
-        padding-right: 10%;
     }
 
     #skills {
@@ -1393,6 +1362,49 @@ nav ul li a {
 
     .lolcat-overlay-text {
         padding: 15%;
+    }
+
+
+    /* COLOR BLOCKS */
+
+    #color-block-wine {
+        display: inline;
+        background: #b26791;
+        float: left;        
+        position: relative;
+        overflow-x: hidden;
+        overflow-y:scroll;
+        height: auto;
+    }
+
+    #color-block-pink {
+        float: left;
+        display: inline;
+        background: #ffcccc;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y:scroll;
+        height: auto;
+    }
+
+    #color-block-blue {
+        display: inline;
+        float: left;
+        background: #66cccc;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y:scroll;
+        height: auto;
+    }
+
+    #color-block-yellow {
+        display: inline;
+        float: left;
+        background: #fff8c6;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y:scroll;
+        height: auto;
     }
 
 
