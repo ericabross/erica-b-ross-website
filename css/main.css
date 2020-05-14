@@ -101,6 +101,12 @@ textarea {
 
 /***********BASE STYLES**********/
 
+html, body {
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 html {
     font-size: 16px;
 }
@@ -314,7 +320,6 @@ nav ul li a {
 
 /***********PORTFOLIO**********/
 
-
 .portfolio-buttons-tablet {
     display: none;
 }
@@ -325,6 +330,12 @@ nav ul li a {
 
 #portfolio {
     background: url('../img/polkadots.png'); 
+}
+
+#portfolio h1 {
+    background-color: white;
+    padding-left: 5%;
+    margin-bottom: 40px;
 }
 
 #portfolio .full-width {
@@ -338,18 +349,9 @@ nav ul li a {
     align-items: center;  
 }
 
-#portfolio h1 {
-    background-color: white;
-    padding-left: 5%;
-    margin-bottom: 40px;
-}
-
-#portfolio img a {
-    margin-top: 10%;
-    width: 85%;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
+.portfolio-buttons-mobile img {
+    margin: 0 7.5%;
+    width: 85%;  
 }
 
 #portfolio h2 {
@@ -412,10 +414,6 @@ nav ul li a {
     padding-top: 35%;
     padding-right: 2%;
     width: 60%;
-}
-
-#contact-img {
-
 }
 
 .contact-icons {
@@ -535,7 +533,7 @@ nav ul li a {
    Modify as content requires.
    ========================================================================== */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
     /* TABLET STYLES */
 
     /***********BASE STYLES**********/
@@ -694,6 +692,10 @@ nav ul li a {
         opacity: 0;
         transition: .5s ease;
         background-color: #ffcccc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .portfolio-buttons-tablet:hover .collins-overlay {
@@ -707,13 +709,7 @@ nav ul li a {
 
     .collins-overlay-text {
         position: absolute;
-        text-align: center;
-        text-decoration: none;
-        padding: 20%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 0 5%;
     }
 
                         /* ACCELERATE WORDPRESS HOVER OVERLAY */
@@ -736,6 +732,10 @@ nav ul li a {
         opacity: 0;
         transition: .5s ease;
         background-color: #b26791;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .portfolio-buttons-tablet:hover .wordpress-overlay {
@@ -749,13 +749,7 @@ nav ul li a {
 
     .wordpress-overlay-text {
         position: absolute;
-        text-align: center;
-        text-decoration: none;
-        padding: 20%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 0 5%;
     }
 
 
@@ -779,6 +773,10 @@ nav ul li a {
         opacity: 0;
         transition: .5s ease;
         background-color: #fff8c6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .portfolio-buttons-tablet:hover .city-cycles-overlay {
@@ -792,9 +790,7 @@ nav ul li a {
 
     .city-cycles-overlay-text {
         position: absolute;
-        text-align: center;
-        text-decoration: none;
-        padding: 20%;
+        padding: 0 5%;
     }
 
                             /* UNPLUGGED HOVER OVERLAY */
@@ -816,6 +812,10 @@ nav ul li a {
         opacity: 0;
         transition: .5s ease;
         background-color: #66cccc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .portfolio-buttons-tablet:hover .unplugged-overlay {
@@ -829,13 +829,7 @@ nav ul li a {
 
     .unplugged-overlay-text {
         position: absolute;
-        text-align: center;
-        text-decoration: none;
-        padding: 20%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 0 5%;
     }
                             
                             /* GRIND BRANDING HOVER OVERLAY */
@@ -857,6 +851,10 @@ nav ul li a {
         opacity: 0;
         transition: .5s ease;
         background-color: #ffcccc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .portfolio-buttons-tablet:hover .grind-branding-overlay {
@@ -869,13 +867,7 @@ nav ul li a {
 
     .grind-branding-overlay-text {
         position: absolute;
-        text-align: center;
-        text-decoration: none;
-        padding: 15%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 0 5%;
     }
 
                             /* GRIND LANDING HOVER OVERLAY */
@@ -897,6 +889,10 @@ nav ul li a {
         opacity: 0;
         transition: .5s ease;
         background-color: #b26791;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .portfolio-buttons-tablet:hover .grind-landing-overlay {
@@ -909,13 +905,7 @@ nav ul li a {
 
     .grind-landing-overlay-text {
         position: absolute;
-        text-align: center;
-        text-decoration: none;
-        padding: 20%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 0 5%;
     }
 
                             /* DOROTHY DELONG HOVER OVERLAY */
@@ -937,6 +927,10 @@ nav ul li a {
         opacity: 0;
         transition: .5s ease;
         background-color: #fff8c6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .portfolio-buttons-tablet:hover .delong-overlay {
@@ -949,13 +943,7 @@ nav ul li a {
 
     .delong-overlay-text {
         position: absolute;
-        text-align: center;
-        text-decoration: none;
-        padding: 20%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 0 5%;
     }
                             
                             /* MAGIC 8-BALL HOVER OVERLAY */
@@ -977,6 +965,10 @@ nav ul li a {
         opacity: 0;
         transition: .5s ease;
         background-color: #66cccc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .portfolio-buttons-tablet:hover .magic-8-ball-overlay {
@@ -989,13 +981,7 @@ nav ul li a {
 
     .magic-8-ball-overlay-text {
         position: absolute;
-        text-align: center;
-        text-decoration: none;
-        padding: 20%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 0 5%;
     }
 
 /***********CONTACT**********/
@@ -1056,7 +1042,7 @@ nav ul li a {
     }
 }
 
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 1024px) {
     /* DESKTOP STYLES */
 
    /***********BASE STYLES**********/
@@ -1175,9 +1161,7 @@ nav ul li a {
     
     #about .full-width {
         padding: 2% 0 2% 0;
-
     }
-
 
     #about h1 {
         padding-bottom: 0;
@@ -1197,8 +1181,8 @@ nav ul li a {
     }
 
     .skills-icons {
-        width: 35%;
-        margin: 6%;
+        width: 25%;
+        margin: 2%;
     }
 
     #skills img {
@@ -1232,22 +1216,6 @@ nav ul li a {
         display: none;
     }
 
-    #color-block-pink.portfolio-buttons-tablet {
-        display: none;
-    }
-
-    #color-block-wine.portfolio-buttons-tablet {
-        display: none;
-    }
-
-    #color-block-blue.portfolio-buttons-tablet {
-        display: none;
-    }
-
-    #color-block-yellow.portfolio-buttons-tablet {
-        display: none;
-    }
-
     .portfolio-buttons-desktop {
         display: inline-block;
         font-size: .75em;
@@ -1259,18 +1227,23 @@ nav ul li a {
         height: auto;
     }
 
-    .portfolio-buttons-desktop:hover .jubilee-overlay {
+                    /* COLLINS OVERLAY */
+    .portfolio-buttons-desktop:hover .collins-overlay {
         opacity: 1;
     }
 
-    .portfolio-buttons-desktop:active .jubilee-overlay {
+    .portfolio-buttons-desktop:active .collins-overlay {
         opacity: 1;
     } /* hover for touch screens */
 
-    .jubilee-overlay-text {
-        padding: 15%;
+                /* ACCELERATE OVERLAY */
+    #portfolio-img-wordpress {
+        background: url('../img/accelerate-wp-preview-yellow.png') center no-repeat;
     }
 
+    .wordpress-overlay {
+        background-color: #fff8c6;
+    }
     .portfolio-buttons-desktop:hover .wordpress-overlay {
         opacity: 1;
     }
@@ -1279,21 +1252,31 @@ nav ul li a {
         opacity: 1;
     } /* hover for touch screens */
 
-    .wordpress-overlay-text {
-        padding: 15%;
+                /* CITY CYCLES OVERLAY */
+    #portfolio-img-city-cycles {
+        background: url('../img/city-cycles-preview-pink.png') center no-repeat;
     }
 
-
-    .portfolio-buttons-desktop:hover .rogue-overlay {
+    .city-cycles-overlay {
+        background-color: #ffcccc;
+    }
+    
+    .portfolio-buttons-desktop:hover .city-cycles-overlay {
         opacity: 1;
     }
 
-    .portfolio-buttons-desktop:active .rogue-overlay {
+    .portfolio-buttons-desktop:active .city-cycles-overlay {
         opacity: 1;
     } /* hover for touch screens */
 
-    .rogue-overlay-text {
-        padding: 15%;
+                /* UNPLUGGED OVERLAY */
+
+    #portfolio-img-unplugged {
+        background: url('../img/unplugged-preview-yellow.png') center no-repeat;
+    }
+
+    .unplugged-overlay {
+        background-color: #fff8c6;
     }
 
     .portfolio-buttons-desktop:hover .unplugged-overlay {
@@ -1304,9 +1287,7 @@ nav ul li a {
         opacity: 1;
     } /* hover for touch screens */
 
-    .unplugged-overlay-text {
-        padding: 15%;
-    }
+                /* GRIND BRANDING OVERLAY */
 
     .portfolio-buttons-desktop:hover .grind-branding-overlay {
         opacity: 1;
@@ -1316,10 +1297,15 @@ nav ul li a {
         opacity: 1;
     } /* hover for touch screens */
 
-    .grind-branding-overlay-text {
-        padding: 10%;
+                    /* GRIND LANDING PAGE OVERLAY */
+    #portfolio-img-grind-landing {
+        background: url('../img/grind-landing-page-preview-yellow.png') center no-repeat;
     }
 
+    .grind-landing-overlay {
+        background-color: #fff8c6;
+    }
+    
     .portfolio-buttons-desktop:hover .grind-landing-overlay {
         opacity: 1;
     }
@@ -1328,6 +1314,33 @@ nav ul li a {
         opacity: 1;
     } /* hover for touch screens */
 
+                    /* DOROTHY DELONG OVERLAY */
+    #portfolio-img-delong {
+        background: url('../img/dorothy-delong-preview-pink.png') center no-repeat;
+    }
+
+    .delong-overlay {
+        background-color: #ffcccc;
+    }
+    
+    .portfolio-buttons-desktop:hover .delong-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-buttons-desktop:active .delong-overlay {
+        opacity: 1;
+    } /* hover for touch screens */
+
+                    /* MAGIC 8-BALL OVERLAY */
+
+    #portfolio-img-magic-8-ball {
+        background: url('../img/magic-8-ball-js-preview-yellow.png') center no-repeat;
+    }
+
+    .magic-8-ball-overlay {
+        background-color: #fff8c6;
+    }
+
     .portfolio-buttons-desktop:hover .magic-8-ball-overlay {
         opacity: 1;
     }
@@ -1335,35 +1348,6 @@ nav ul li a {
     .portfolio-buttons-desktop:active .magic-8-ball-overlay {
         opacity: 1;
     } /* hover for touch screens */
-
-    .magic-8-ball-overlay-text {
-        padding: 15%;
-    }
-
-    .portfolio-buttons-desktop:hover .election-overlay {
-        opacity: 1;
-    }
-
-    .portfolio-buttons-desktop:active .election-overlay {
-        opacity: 1;
-    } /* hover for touch screens */
-
-    .election-overlay-text {
-        padding: 15%;
-    }
-
-    .portfolio-buttons-desktop:hover .lolcat-overlay {
-        opacity: 1;
-    }
-
-    .portfolio-buttons-desktop:active .lolcat-overlay {
-        opacity: 1;
-    } /* hover for touch screens */
-
-    .lolcat-overlay-text {
-        padding: 15%;
-    }
-
 
     /* COLOR BLOCKS */
 
@@ -1407,21 +1391,30 @@ nav ul li a {
         height: auto;
     }
 
+    #portfolio {
+        border-bottom: 3px solid #999999;
+    }
 
 /***********CONTACT**********/
 
-
-    .two-thirds-width {
-        margin-left: 0;
-        width: 33%;
+    #contact .full-width {
+        display: flex;
+        flex-flow: row wrap;
+        padding-bottom: 50px;
     }
 
+    .third-width {
+        width: 25%;
+    }
 
     #contact-img {
         width: 95%;
-        margin-left: 3%;
-        margin-bottom: 20%;
     }
+
+    .two-thirds-width {
+        width: 35%;
+    }
+
     #contact h1 {
         margin-top: 10%;
         margin-bottom: 5%;    
@@ -1435,33 +1428,10 @@ nav ul li a {
         width: 10%;
     }
  
-    .social-media p {
-        display: flex;
-        justify-content: space-between;
-        width: 33%;
+    .social-media {
+        width: 30%;
+        padding: 0;
     }
-
-    .social-media p i {
-        
-        
-    }
-
-    #contact ul {
-        margin-top: 35%;
-    }
-
-    #contact ul img {
-        width: 100%;
-    }
-
-    #contact ul {
-        padding-left: 0;
-    }
-
-    #contact li {
-        padding-right: 8%;
-    }
-
 }
 
 @media print,
