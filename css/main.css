@@ -712,10 +712,10 @@ nav ul li a {
         padding: 0 5%;
     }
 
-                        /* ACCELERATE WORDPRESS HOVER OVERLAY */
+                        /* SCHOOL OF SUDS WORDPRESS HOVER OVERLAY */
 
     #portfolio-img-wordpress {
-        background: url('../img/accelerate-wp-preview-wine.png') center no-repeat;
+        background: url('../img/sos-preview-wine.png') center no-repeat;
         background-size: cover;
         overflow-x: hidden;
         height: auto;
@@ -1236,9 +1236,9 @@ nav ul li a {
         opacity: 1;
     } /* hover for touch screens */
 
-                /* ACCELERATE OVERLAY */
+                /* SCHOOL OF SUDS OVERLAY */
     #portfolio-img-wordpress {
-        background: url('../img/accelerate-wp-preview-yellow.png') center no-repeat;
+        background: url('../img/sos-preview-yellow.png') center no-repeat;
     }
 
     .wordpress-overlay {
